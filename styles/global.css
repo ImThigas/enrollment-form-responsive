@@ -1,41 +1,65 @@
-*, *::before, *::after{
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-:root{
-    --brand-light: #F67841;
-    --brand-mid: #F3541C;
-    --brand-dark: #E43A12;
+:root {
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
 
-    --text-primary: #292524;
-    --text-color: #57534E;
-    --text-tertiary: #8F8881;
-    --text-highlight: #E43A12;
+  --text-primary: #292524;
+  --text-color: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
 
-    --surface-primary: #FFFFFF;
-    --surface-secondary: #FEE7D6;
+  --surface-primary: #ffffff;
+  --surface-secondary: #fee7d6;
 
-    --stroke-default: #D6D3D1;
-    --semantic-error: #DC2626;
+  --stroke-default: #d6d3d1;
+  --semantic-error: #dc2626;
 
-    --ff-poppins: "Poppins", serif;
+  --ff-poppins: "Poppins", serif;
 
-    --h1: 700 2rem/1.2 var(--ff-poppins);
-    --h2: 700 1.5rem/1.2 var(--ff-poppins);
-    --h3: 700 1.25rem/1.2 var(--ff-poppins);
-    --h4: 700 1rem/1.2 var(--ff-poppins);
+  --h1: 700 2rem/1.2 var(--ff-poppins);
+  --h2: 700 1.5rem/1.2 var(--ff-poppins);
+  --h3: 700 1.25rem/1.2 var(--ff-poppins);
+  --h4: 700 1rem/1.2 var(--ff-poppins);
 }
 
-body{
-    font: 1rem/1.5 var(--ff-poppins);
-    color: #57534E;
+body {
+  font: 1rem/1.5 var(--ff-poppins);
+  color: #57534e;
+  background-color: var(--surface-primary);
 }
 
-.container{
-    margin-inline: 1.5rem;
+.container {
+  margin-inline: 1.5rem;
 }
+
+h1 {
+  font: var(--h1);
+  color: var(--text-primary);
+}
+
+h2 {
+  font: var(--h2);
+  color: var(--text-primary);
+}
+
+h4{
+    font: var(--h4);
+    color: var(--text-primary);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+

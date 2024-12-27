@@ -1,0 +1,15 @@
+article {
+    background-color: var(--surface-secondary);
+    padding-top: 1.5rem;
+
+    & .container{
+        & .logo{
+            margin-bottom: .75rem;
+            margin-inline: auto;
+            max-width: 12.6875rem;
+        }
+        & img:nth-child(2){
+            margin-bottom: 1.5rem;
+        }
+    }
+}
