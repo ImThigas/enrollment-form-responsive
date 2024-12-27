@@ -7,3 +7,35 @@
     padding: 0;
 }
 
+:root{
+    --brand-light: #F67841;
+    --brand-mid: #F3541C;
+    --brand-dark: #E43A12;
+
+    --text-primary: #292524;
+    --text-color: #57534E;
+    --text-tertiary: #8F8881;
+    --text-highlight: #E43A12;
+
+    --surface-primary: #FFFFFF;
+    --surface-secondary: #FEE7D6;
+
+    --stroke-default: #D6D3D1;
+    --semantic-error: #DC2626;
+
+    --ff-poppins: "Poppins", serif;
+
+    --h1: 700 2rem/1.2 var(--ff-poppins);
+    --h2: 700 1.5rem/1.2 var(--ff-poppins);
+    --h3: 700 1.25rem/1.2 var(--ff-poppins);
+    --h4: 700 1rem/1.2 var(--ff-poppins);
+}
+
+body{
+    font: 1rem/1.5 var(--ff-poppins);
+    color: #57534E;
+}
+
+.container{
+    margin-inline: 1.5rem;
+}
