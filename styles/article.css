@@ -1,15 +1,40 @@
 article {
-    background-color: var(--surface-secondary);
-    padding-top: 1.5rem;
-
-    & .container{
-        & .logo{
-            margin-bottom: .75rem;
-            margin-inline: auto;
-            max-width: 12.6875rem;
-        }
-        & img:nth-child(2){
-            margin-bottom: 1.5rem;
-        }
+  background-color: var(--surface-secondary);
+  & .article-container {
+    padding-block: 1.5rem;
+    & .container {
+      & img:nth-child(1) {
+        display: flex;
+        margin-bottom: 0.75rem;
+        margin-inline: auto;
+        max-width: 12.6875rem;
+        height: auto;
+      }
     }
+  }
+}
+@media (width >=80em) {
+  article {
+    grid-area: b;
+    overflow: hidden;
+    & .article-container {
+      padding-top: 4rem;
+      max-width: 41rem;
+      & .container {
+        & img:nth-child(1) {
+          margin-inline: unset;
+          margin-bottom: .5rem;
+        }
+        & h1 {
+            margin-bottom: .5rem;
+          & span {
+            color: var(--text-highlight);
+          }
+        }
+        & p{
+            margin-bottom: 2rem;
+        }
+      }
+    }
+  }
 }

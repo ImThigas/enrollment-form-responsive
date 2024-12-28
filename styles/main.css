@@ -1,7 +1,8 @@
 main {
-  & .container {
+  & .main-container{
+    margin-block: 1.5rem;
     & header {
-        margin-block: 1.5rem 3rem;
+        margin-bottom: 3rem;
       & .back {
         display: flex;
         align-items: center;
@@ -14,6 +15,17 @@ main {
       & h2{
         padding-bottom: .5rem;
       }
+    }
+  }
+}
+@media (width >= 80em){
+  main {
+    grid-area: a;
+    margin-left: auto;
+    overflow: auto;
+    & .main-container {
+      max-width: 43rem;
+      margin-block: 4rem;
     }
   }
 }

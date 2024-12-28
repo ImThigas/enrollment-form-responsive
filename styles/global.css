@@ -21,18 +21,18 @@
 
   --surface-primary: #ffffff;
   --surface-secondary: #fee7d6;
-  --surface-disabled: #E7E5E4;
+  --surface-disabled: #e7e5e4;
 
   --stroke-default: #d6d3d1;
-  --stroke-highlight: #F3541C;
+  --stroke-highlight: #f3541c;
   --semantic-error: #dc2626;
 
   --ff-poppins: "Poppins", serif;
 
-  --h1: 700 2rem/1.2 var(--ff-poppins);
-  --h2: 700 1.5rem/1.2 var(--ff-poppins);
-  --h3: 700 1.25rem/1.2 var(--ff-poppins);
-  --h4: 700 1rem/1.2 var(--ff-poppins);
+  --h1: 600 2.5rem/1.5 var(--ff-poppins);
+  --h2: 600 1.5rem/1.5 var(--ff-poppins);
+  --h3: 600 1.25rem/1.5 var(--ff-poppins);
+  --h4: 600 1rem/1.5 var(--ff-poppins);
 }
 
 body {
@@ -60,7 +60,33 @@ img {
   object-fit: cover;
 }
 
-strong{
+strong {
   font-weight: 500;
   color: var(--brand-dark);
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 80em) {
+  .desktop-only {
+    display: block;
+  }
+
+  body {
+    overflow: hidden;
+  }
+  .container {
+    margin-inline: 4rem;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+    grid-template-areas: "a b";
+    height: 100vh;
+  }
+
+  
 }
