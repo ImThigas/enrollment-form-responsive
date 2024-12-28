@@ -1,0 +1,30 @@
+.actions-wrapper{
+    display: grid;
+    margin-bottom: 1.5rem;
+    & button{
+        border: none;
+        border-radius: .5rem;
+        padding-block: .75rem;
+        width: 100%;
+        font: 500 1rem/1.5 var(--ff-poppins);
+    }
+    & .save{
+        margin-block: .75rem;
+        outline: 1px solid var(--stroke-highlight);
+        border: 2px solid transparent;
+        background-color: var(--surface-primary);
+        color: var(--text-highlight);
+        &:hover{
+            border: .125rem solid var(--brand-dark);
+            outline: .25rem solid var(--surface-secondary);
+            outline-offset: 0.1px;
+        }
+    }
+    & .submit{
+        background-color: var(--brand-dark);
+        color: var(--surface-primary);
+        &:hover{
+            background-color: var(--brand-mid);
+        }
+    }
+}

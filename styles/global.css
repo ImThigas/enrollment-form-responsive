@@ -60,3 +60,7 @@ img {
   object-fit: cover;
 }
 
+strong{
+  font-weight: 500;
+  color: var(--brand-dark);
+}

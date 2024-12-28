@@ -1,0 +1,36 @@
+.input-checkbox {
+  position: relative;
+  display: flex;
+  gap: .75rem;
+  margin-bottom: 3rem;
+  & input[type="checkbox"] {
+    all: unset;
+    opacity: 0;
+    inset: 0;
+    position: absolute;
+  }
+  & .checkbox-image {
+    position: absolute;
+    background: url(../../assets/icons/checkbox.svg) no-repeat center/contain;
+    
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &:has(input[type="checkbox"]:hover):not(:has(input[type="checkbox"]:checked)) {
+    & .checkbox-image {
+      background: url(../../assets/icons/checkbox-hover.svg) no-repeat center/contain;
+    }
+  }
+
+  &:has(input[type="checkbox"]:checked){
+    & .checkbox-image {
+      background: url(../../assets/icons/checkbox-checked.svg) no-repeat center/contain;
+    }
+  }
+
+  & p{
+    margin-left: 2.25rem;
+    display: inline;
+  }
+}
