@@ -21,8 +21,10 @@
 
   --surface-primary: #ffffff;
   --surface-secondary: #fee7d6;
+  --surface-disabled: #E7E5E4;
 
   --stroke-default: #d6d3d1;
+  --stroke-highlight: #F3541C;
   --semantic-error: #dc2626;
 
   --ff-poppins: "Poppins", serif;
@@ -51,11 +53,6 @@ h1 {
 h2 {
   font: var(--h2);
   color: var(--text-primary);
-}
-
-h4{
-    font: var(--h4);
-    color: var(--text-primary);
 }
 
 img {
